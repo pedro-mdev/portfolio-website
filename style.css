@@ -1,0 +1,386 @@
+/* Cascading Stylesheet */
+/* mobile first */
+
+/* font Import*/
+ @import url('http://fonts.cdnfonts.com/css/ocr-a-std');
+      
+
+html , body{
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.home-container{
+    background-color: #10100E;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-image-container {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.background-image{
+    
+    position: absolute;
+    opacity: 50%;
+
+}
+
+@media screen and (orientation: portrait) {
+    .background-image { max-width: 150%; }
+  }
+  
+@media screen and (orientation: landscape) {
+    .background-image { max-height: 100%; }
+  }
+
+.side-bar{
+    grid-area: sb;
+    padding:0 5px;
+    border-right: #FEFFE2 2px solid;
+    height: 100vh;
+    max-width: 5em;
+}
+
+.main-content{
+    grid-area: mc;
+    margin: 0 auto;
+}
+
+.home-container-grid{
+        display: grid;
+        grid-template-columns: repeat(8 , 1fr);
+        grid-auto-rows: minmax(800px,auto);
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        grid-template-areas:
+            "sb mc mc mc mc mc ";
+}
+
+.portfolio-logo{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.social-icons{
+    padding: 10px;
+    padding-top: 40vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.social-icons > ul{
+    margin: 0;
+    padding: 0;
+}
+
+.icons{
+    color: #FEFFE2;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.greeting-section{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    z-index: 100;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    
+}
+.greeting-section{ animation-name: greeting-text }
+  @keyframes greeting-text {
+      from {
+          opacity: 0;
+          transform: translateY(100%);
+      }
+      to { opacity: 1 }
+  
+    }
+  
+.greeting1{
+    font-size:1.2rem;
+    color: #FEFFE2;
+    font-family: 'OCR A Std', sans-serif;
+    margin:0;
+  
+}
+.greeting2{
+    font-size:1.2rem;
+    color: #FEFFE2 ;
+    font-family:'OCR A Std', sans-serif;
+    margin: 0;
+  
+}
+
+.greeting3{
+    font-size:1.2rem;
+    color: #FEFFE2;
+    font-family:'OCR A Std', sans-serif;
+    margin:0;
+}
+
+.scroll-down {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    width: 5px;
+    height: 40px;
+    margin-left: -12px;
+    border-radius: 12px;
+    border: 1px solid #FEFFE2;
+    z-index: 999;
+  }
+  .scroll-down:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    margin: 5px auto;
+    background-color: #FEFFE2;
+    animation: scroll 1s infinite;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      transform: translateY(25px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+  }
+  
+.portfolio-container{
+    height: auto;
+    width: 100vw;
+    background-color: #FEFFE2;
+}
+
+p{
+    margin: 0;
+}
+
+.title{
+    color: #10100E;
+    font-size: 30px;
+    font-family:'OCR A Std', sans-serif;
+    padding: 30px;
+}
+
+.portfolio-container-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap:30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-card{
+    display: grid;
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title{
+    color: #10100E;
+    font-size: 20px;
+    font-family:'OCR A Std', sans-serif;
+    padding: 15px;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.card-image-container{
+    margin: 0 auto;
+    width: auto;
+}
+
+.card-image{
+    max-width: 200px;
+}
+
+.card-info{
+    color: #10100E;
+    font-size: 15px;
+    font-family:'OCR A Std', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.card-technologies{
+    color: #10100E;
+    font-size: 0.9rem;
+    font-family:'OCR A Std', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.card-button-container{
+    width: 200px;
+    margin: 0 auto;
+    padding:25px 0px;
+}
+
+.card-button{
+    padding: 15px 30px;
+    width: 137px;
+    background: #10100E;
+    color: #FEFFE2;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    border: none;
+    font-size: 15px;
+    font-family:'OCR A Std', sans-serif ;
+    display: inline-block;
+}
+
+.card-button:hover{
+    color: #10100E;
+    background-color: #FEFFE2;
+    transition: 0.2s linear;
+    border: 2px solid #10100E;
+}
+
+
+.contact-section-container{
+    height: auto;
+    width: 100vw;
+    background-color: #10100E;
+    padding-bottom: 10px;
+}
+
+.contact-title{
+    color: #FEFFE2;
+    font-size: 30px;
+    font-family:'OCR A Std', sans-serif;
+    padding: 30px;
+}
+
+.contact-details-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.contact-details{
+    color: #10100E;
+    font-size: 15px;
+    font-family:'OCR A Std', sans-serif;
+    padding: 10px;
+    background-color: #FEFFE2;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.contact-social-icons{
+    padding:10px;
+}
+
+.contact-social-icons > i {
+    color: #10100E;
+}
+
+.contact-social-icons{
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-card-title{
+    text-align: center;
+    padding:10px;
+}
+
+.contact-card-description{
+    padding: 10px;
+}
+
+.contact-card-link{
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background-color:#FEFFE2;
+    color: #10100E;
+    padding: 10px;
+    font-family: 'OCR A Std', sans-serif;
+    text-align: center;
+}
+
+/* Media Queries for responsive sizing*/
+
+
+@media only screen and (min-width: 600px) {
+    .greeting1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-logo{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .social-icons{
+        padding-top:35vh ;
+    }
+    .social-icons > .icons{
+        font-size: 3em;
+    }
+
+    .scroll-down{
+        border: 2px solid #FEFFE2;
+        width: 10px;
+    }
+
+    .scroll-down:before{
+        width: 2px;
+    }
+}
+
+@media only screen and (min-width:830px){
+    
+    .greeting1 {
+        font-size: 3rem;
+        }
+    .social-icons > i{
+        font-size: 3.5em;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (min-width:1250px){
+
+    .greeting1{
+        font-size:5em ;
+    }
+}
+

@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Jura|Montserrat|Rufina');
+
+@media screen and (max-width: 800px) {
+    /* .navigation li{
+        font-size: 0.6em;
+    } */
+
+    /* .clubs-body{
+        background-image: url(images/nqbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .body{
+        background-image: url(images/nqbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    } */
+}
+
+@media screen and (min-width: 1200px) {
+    
+    /* .body{
+        background-image: url(images/nqbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .clubs-body{
+        background-image: url(images/nqbg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    } */
+
+}
+
+
+/*----------------*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  background-image: url(images/nqbg.png); /*MY OWN IMAGE*/
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+/* img {max-width:100%; height:auto;} */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+.container-0{           /*Total Container*/
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #cdcdcd;
+}
+
+.container-0 div{
+    border: 1px;
+    padding: 5px;
+}
+
+
+.box-head1{    /*Navigation + logo box*/
+    display: flex;
+  
+    background: white;
+    height: 100px;
+}
+
+@media screen and (min-width: 700px){
+    .box-head1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    }
+}
+
+.box-head1 div{
+    /*border: 1px #ccc solid;*/
+    padding: 0;
+    border-bottom: 1px yellow solid;
+}
+
+
+.box-nav{ /*Navigation Box*/
+    flex: 10;
+}
+
+.navigation{
+    text-align: right;
+}
+
+.navigation li{
+    list-style: none;
+    display: inline-flex;
+}
+
+.navigation a {
+    text-decoration: none;
+color: #000;
+font-family: 'jura', sans-serif;
+padding: 5px 5% 10px 5%;
+font-weight: 100;
+font-size: 1.2em;
+color: #000;
+}
+
+.navigation ul a:hover {
+    background: yellow;
+}
+
+
+.box-head-logo{         /*logo box*/
+    flex: 1;
+    
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 80px;
+    width: 80px;
+    min-width: auto;
+}
+
+.box-head-h{        /*Header title box*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-head-h div{        /*Header title box*/
+    /*border: 1px #ccc solid;*/
+    padding: 10px;
+}
+
+.box-head-h1{        /*Header title box*/
+    flex: 4;
+}
+
+.box-head-h2{       
+    flex: 1;
+}
+
+.diamond{
+    height: 100%;
+    width: 100%;
+}
+
+.header-title3{
+    text-align: center;
+    margin: auto;
+    font-family: 'jura', sans-serif;
+    font-weight: 100;
+    padding-top: 25%;
+}
+
+.header-title{
+    text-align: center;
+    margin: auto;
+    font-family: 'rufina', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.header-title2{
+    text-align: center;
+    margin: auto;
+    font-family: 'rufina', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 35%;
+}
+
+/* ----------------------------------------------- */
+
+.box-divider{
+    display: flex;
+    justify-content: center;
+    /*border-bottom: 1px #ccc solid;
+    border-top: 1px #ccc solid;*/
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+/* .box-divider-1{
+   border-bottom: 1px #ccc solid;
+    border-top: 1px #ccc solid; 
+} */
+
+.divider-img{
+    width: 150px;
+    height: 150px;
+
+}
+
+/* ----------------------------------------------- */
+
+
+.box-nq{        /*northern quarter segment box*/
+    /*border-bottom: 1px #ccc solid;*/
+    padding-top: 7%;
+    padding-bottom: 15px;
+    background-color: rgba(255,250,250, 0.9);
+}
+
+.h1nq{
+    font-family: 'rufina', sans-serif;
+    text-align: center;
+}
+
+.container-nq1{         /*northern quarter images container*/
+    display:flex;
+    
+}
+
+.container-nq1 div{
+    /*border: 1px #ccc solid;*/
+    padding: 5px;
+}
+
+.container-nq2 div{     /*nq2 is for the text segment*/
+    /*border: 1px #ccc solid; */
+    padding: 10px;
+    /* border:1px solid red; */
+    margin: 0 auto;
+    max-width: 800px;
+ 
+}
+            
+
+.box-1{
+    flex: 1;
+
+}
+
+.box-2{
+    flex: 1;
+    
+}
+
+.box-3{
+    flex: 1;
+}
+
+.nqimg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.h3nq{
+    font-family: 'jura', sans-serif;
+    font-size: 2em;
+    margin:0; padding:1em 0 0.2em 0;
+}
+
+/* .c2box{ 
+    
+} */
+
+.pnq{
+    font-family: 'jura', sans-serif;
+    font-size: 1.2em;
+    padding:0; margin:0;
+    
+}
+
+/* --------------------------------------------- */
+
+.box-tp{
+    padding-bottom: 30px;
+    padding-top: 7%;
+    background-color: rgba(255,250,250, 0.9);
+}
+
+.box-tp-h{
+    text-align: center;
+}
+
+.h1tp{
+    font-family: 'rufina', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+}
+
+.ptp{
+    font-family: 'jura', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.box-tp div{
+    border: 1px;
+    padding-top: 10px;
+}
+
+.container-toppicks1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container-toppicks1 div{
+    /*border-top: 1px #000 solid; */
+    padding: 10px;
+}
+
+.box-tp1{
+    flex-wrap: wrap;
+    width: 250px;
+    /*height: 250px;*/
+    /*background-color: #ccc;*/
+    display: flex;
+    overflow: hidden;
+}
+
+.sub-box-tp1{
+    /*padding: 10px;*/
+    width: 230px;
+    height: 230px;
+    background-image: url("images/club4.gif");
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-color: grey;
+    /*box-shadow: 5px 5px 4px 5px darkgrey;*/
+}
+
+.h2tp{ 
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-family: 'rufina', sans-serif; 
+}
+
+.h3tp{
+    font-family: 'jura', sans-serif;
+    color: yellow;
+}
+
+.ultp{
+    font-family: 'jura', sans-serif;
+    color: white;
+    font-size: 1.2em; 
+    list-style-type: square;
+    line-height: 1.8em;
+}
+
+/*Clubs Page*/
+
+.box-clubs{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: rgba(255,250,250, 0.9);
+}
+
+.box-clubs div{
+    padding: 5px;
+    /*border: #ccc 1px solid;*/
+}
+
+.box-c-h{
+    text-align: center;
+}
+
+
+.container-clubs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container-clubs div{
+    padding: 5px;
+}
+
+.box-c1{
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.h2c{
+    text-align: center;
+    color: White;
+}
+
+.h3c{
+    color: yellow;
+    font-family: 'jura', sans-serif; 
+}
+
+.h3c-bd{
+    color: yellow;
+    font-family: 'jura', sans-serif; 
+}
+
+.h3c-skb{
+    color: yellow;
+    font-family: 'jura', sans-serif; 
+}
+
+.sub-box-c1-a{
+    background-image: url("images/blackdog.jpeg"); /* IMG SOURCE https://www.pexels.com/photo/adult-black-pug-1851164/(ROYALTY FREE) */
+    outline: solid 1px black;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 300px;
+    width: 230px;
+}
+
+.sub-box-c1-b{
+    background-image: url("images/tiki.jpeg"); /* IMG SOURCE https://pixabay.com/photos/cocktail-tropical-beverage-drink-1049525/ (ROYALTY FREE) */
+    outline: solid 1px black;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 300px;
+    width: 230px;
+}
+
+.sub-box-c1-c{
+    background-image: url("images/guilty.jpeg"); /*IMG SOURCE https://www.pexels.com/photo/man-standing-beside-red-guilty-neon-sign-1764600/ (ROYALTY FREE) */
+    outline: solid 1px black;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 300px;
+    width: 230px;
+}
+
+.sub-box-c1-d{
+    background-image: url("images/soupkitchen.jpeg"); /* IMG SOURCE https://www.pexels.com/photo/narrow-corridor-with-white-light-bulb-on-top-1207922/ (ROYALTY FREE) */
+    outline: solid 1px black;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 300px;
+    width: 230px;
+}
+
+.sub-box-c1-e{
+    background-image: url("images/divenq.jpeg"); /*IMG SOURCE https://www.pexels.com/photo/underwater-photography-of-woman-1463924/ (ROYALTY FREE) */
+    outline: solid 1px black;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 300px;
+    width: 230px;
+}
+
+.clubsnav {
+    text-decoration: none;
+}
+
+/* CLUBS */
+
+.clubs-body{
+    background-image: url("images/blackdog2.jpeg"); /* IMG SOURCE   https://www.pexels.com/photo/adult-alcohol-bar-bartender-274192/ (ROYALTY FREE) */
+}
+
+.h1c2 {
+    font-family: 'jura', sans-serif;
+    font-size: 5em;
+    color: yellow; 
+}
+
+.pc2{
+    font-family: 'jura', sans-serif;
+    color: white;
+    clear:both; padding-top:2.3em;
+    max-width: 600px;
+    margin: 0 0 0.5em 0;
+}
+
+.pc2+.pc2 {padding-top:0;}
+
+.highlight{
+    font-family: 'jura', sans-serif;
+    color: yellow;
+}
+
+.clubspics{
+    width: 25%;
+    float:left;
+    /* height: 160px; */
+}
+
+/* BLACKDOG CLUBS PAGE */
+
+.box-blackdog div{
+    padding: 5px;
+    border: #ccc 1px solid;
+}
+
+.box-blackdog-1{
+
+}
+
+.box-bd-content-h{
+  flex: 1;
+  padding-left: 3%;
+  
+}
+
+.box-c-content-p{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.blackdog-2 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.footer.homepage {margin-top:0;}
+
+.pfoot{
+    font-family: 'Jura', sans-serif;
+}
+
+.footer a {color:yellow;}
