@@ -2,7 +2,11 @@
 /* mobile first */
 
 /* font Import*/
- @import url('http://fonts.cdnfonts.com/css/ocr-a-std');
+@import url('http://fonts.cdnfonts.com/css/ocr-a-std');
+@font-face {
+    font-family: 'OCR A Std';
+    src: url(http://fonts.cdnfonts.com/css/ocr-a-std);
+ }
       
 
 html , body{
