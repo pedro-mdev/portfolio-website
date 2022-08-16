@@ -351,8 +351,8 @@ p{
     }
 
     .portfolio-logo{
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
     }
     
     .social-icons{
@@ -378,7 +378,7 @@ p{
         font-size: 3rem;
         }
     .social-icons > i{
-        font-size: 3.5em;
+        font-size: 3em;
         margin: 10px;
     }
 
