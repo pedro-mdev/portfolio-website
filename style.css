@@ -57,14 +57,13 @@ html , body{
     .background-image { max-height: 100%; }
   }
 
-/* mobile first .side-bar{
+.side-bar{
     grid-area: sb;
     padding:0 5px;
-    border-right: #FEFFE2 2px solid;
     height: 100vh;
     max-width: 5em;
 }
-*/
+
 .main-content{
     grid-area: mc;
     margin: 0 auto;
